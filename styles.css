@@ -55,7 +55,7 @@ nav {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0,255,255,1);
+    background-color: rgb(255, 0, 200);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -88,18 +88,24 @@ article section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    border: solid 3px;
+    border-color: cyan;
 
 }
 
 article section img {
     max-height: 200px;
+    border: solid 3px;
+    border-color: hotpink;
 }
 
 aside {
     margin-right: 20px;
-    padding: 20px;
+    padding: 25px;
     float: right;
     clear: both;
+    border: solid 3px;
+    border-color: hotpink;
 }
 
 aside section {
