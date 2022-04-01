@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   background-color: black;  
+  color:#edf0f1;
+  font-family: "Montserrat", sans-serif;
 }
 
 li, a, button {
@@ -22,9 +24,16 @@ li, a, button {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+}
+
+nav {
+    border: solid 3px;
+    border-color: cyan;
+    padding: 10px;
 }
 
 .nav_links {
@@ -41,7 +50,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: cyan;
+    color: hotpink;
 }
 
 button {
@@ -57,3 +66,12 @@ button {
 button:hover {
     background-color: rgba(0,255,255,0.8);
 }
+
+
+
+    
+    
+}
+
+
+
