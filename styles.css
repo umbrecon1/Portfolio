@@ -24,6 +24,7 @@ li, a, button {
 
 header {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +32,8 @@ header {
 }
 
 nav {
+    display: flex;
+
     border: solid 3px;
     border-color: cyan;
     padding: 10px;
@@ -79,9 +82,12 @@ button:hover {
 }
 
 article {
+    display:flex;
+    flex-wrap: wrap;
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+
 }
 
 article section {
@@ -99,13 +105,20 @@ article section img {
     border-color: hotpink;
 }
 
+article section p {
+    font-size: calc(0.75em + 1vw);
+}
+
 aside {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     padding: 25px;
     float: right;
     clear: both;
     border: solid 3px;
     border-color: hotpink;
+    
 }
 
 aside section {
@@ -130,8 +143,38 @@ aside img {
     max-height: 150px;
 }
     
-    
+@media screen and (max-width: 768px) {
+    aside{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        border-width: 100%;
+        
+        
+    }
+@media screen and (max-width: 768px) {
+    article {
+        float: none;
+        display: block;
+        width: 100%;
+        border-width: 100%;
+        margin: auto;
+    }
+@media  and (max-width: 768px) {
+    .nav_links {
+        display: block;
+    }
 }
+
+}
+
+
+   
+   
+
+
+
 
 
 
