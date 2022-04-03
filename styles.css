@@ -74,39 +74,43 @@ button:hover {
 .float-left {
     float: left;
     margin-right: 25px;
+    max-width: 100%
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-width: 100%;
 }
+
 
 article {
     display:flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 75%;;
     display: inline-block;
     margin-left: 20px;
+    block-size: fit-content;
+    border-spacing: fit-content;
+    
 
 }
 
 article section {
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 10px;
     height: 300px;
     border: solid 3px;
     border-color: cyan;
-
+    
 }
 
 article section img {
     max-height: 200px;
     border: solid 3px;
     border-color: hotpink;
-}
+    
 
-article section p {
-    font-size: calc(0.75em + 1vw);
 }
 
 aside {
@@ -146,28 +150,76 @@ aside img {
 @media screen and (max-width: 768px) {
     aside{
         float: none;
-        display: inline-block;
+        display: block;
         width: 100%;
         margin: auto;
-        border-width: 100%;
-        
-        
-    }
+      }
 @media screen and (max-width: 768px) {
-    article {
-        float: none;
-        display: block;
-        width: 100%;
+     article {
+         flex-wrap: nowrap;
+         display: block;
+         width: 100%;
+         margin: auto;
+         
+      }
+@media screen and (max-width: 768px) {
+    nav {
         border-width: 100%;
         margin: auto;
+        float: none;
     }
-@media  and (max-width: 768px) {
-    .nav_links {
-        display: block;
+@media screen and (max-width: 760px) {
+    .container {
+       border-width: fit-content; 
     }
 }
 
-}
+@media screen and (max-width: 760px) {
+    .logo, .cta {
+        margin: auto;
+        padding-top: 30px;
+        float: none;
+        display: block;
+        align-items: center;
+    }
+        
+@media screen and (max-width: 390px) {
+    aside{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+@media screen and (max-width: 390px) {
+    article {
+        flex-wrap: nowrap;
+        display: block;
+        width: 100%;
+        margin: auto;
+        font-size: ; 
+            
+             
+    }
+@media screen and (max-width: 390px) {
+    header nav {
+        border-width: 100%;
+        margin: auto;
+        float: none;
+        display: block;
+        align-items: center;
+    }
+            
+        } 
+
+
+
+   
+    
+  
+
+
+ 
+    
 
 
    
