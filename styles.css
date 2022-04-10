@@ -146,34 +146,13 @@ aside img {
     max-width: 150px;
     max-height: 150px;
 }
-    
-@media screen and (max-width: 768px) {
-    aside{
-        float: none;
-        display: block;
-        width: 100%;
-        margin: auto;
-      }
-@media screen and (max-width: 768px) {
-     article {
-         flex-wrap: nowrap;
-         display: block;
-         width: 100%;
-         margin: auto;
-         
-      }
+
 @media screen and (max-width: 768px) {
     nav {
         border-width: 100%;
         margin: auto;
         float: none;
     }
-@media screen and (max-width: 760px) {
-    .container {
-       border-width: fit-content; 
-    }
-}
-
 @media screen and (max-width: 760px) {
     .logo, .cta {
         margin: auto;
@@ -182,24 +161,27 @@ aside img {
         display: block;
         align-items: center;
     }
-        
-@media screen and (max-width: 390px) {
+       
+@media screen and (max-width: 760px) {
+    .container {
+       border-width: fit-content; 
+    }
+@media screen and (max-width: 768px) {
+     article {
+         flex-wrap: nowrap;
+         display: block;
+         width: 100%;
+         margin: auto;
+         
+      }
+
+@media screen and (max-width: 768px) {
     aside{
         float: none;
         display: block;
         width: 100%;
         margin: auto;
-    }
-@media screen and (max-width: 390px) {
-    article {
-        flex-wrap: nowrap;
-        display: block;
-        width: 100%;
-        margin: auto;
-        font-size: ; 
-            
-             
-    }
+      }
 @media screen and (max-width: 390px) {
     header nav {
         border-width: 100%;
@@ -208,8 +190,26 @@ aside img {
         display: block;
         align-items: center;
     }
+@media screen and (max-width: 390px) {
+    article {
+        flex-wrap: nowrap;
+        display: block;
+        width: 100%;
+        margin: auto;
+        font-size: ; 
+    }
+@media screen and (max-width: 390px) {
+    aside{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
             
-        } 
+             
+   
+
+
 
 
 
