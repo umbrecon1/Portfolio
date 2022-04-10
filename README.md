@@ -14,6 +14,6 @@ Currently it has the following:
 
 -Sizing for various viewports 
 
-Link: https://github.com/umbrecon1/Portfolio.git
+Link: https://umbrecon1.github.io/Portfolio/
 
  Screenshot: (./images/screenshot.png)
