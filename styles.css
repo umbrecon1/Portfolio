@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: black;  
-  color:#edf0f1;
-  font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
+
 .logo {
     cursor: pointer;
     height: 150px;
@@ -67,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,255,255,0.8);
+    background-color: rgba(0, 255, 255, 0.8);
 }
 
 
@@ -77,42 +80,58 @@ button:hover {
     max-width: 100%
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-    max-width: 100%;
+#projects {
+  flex: 4;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.projectTitle {
+    margin: auto;
+    padding: 10px;
+    
 }
 
 
 article {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    width: 75%;;
+    width: 75%;
     display: inline-block;
     margin-left: 20px;
     block-size: fit-content;
     border-spacing: fit-content;
-    
+
 
 }
 
 article section {
     margin-bottom: 20px;
     padding: 10px;
-    height: 300px;
+    height: auto;
     border: solid 3px;
     border-color: cyan;
-    
+    border-width: 100%;
+
 }
 
 article section img {
     max-height: 200px;
     border: solid 3px;
     border-color: hotpink;
+    margin: auto;
+    text-align: center;
+    width: 250px;
     
-
 }
 
+article section img:hover{
+   opacity: .5; 
+    
+}
 aside {
     display: flex;
     flex-direction: column;
@@ -122,7 +141,7 @@ aside {
     clear: both;
     border: solid 3px;
     border-color: hotpink;
-    
+
 }
 
 aside section {
@@ -153,80 +172,44 @@ aside img {
         margin: auto;
         float: none;
     }
-@media screen and (max-width: 760px) {
-    .logo, .cta {
-        margin: auto;
-        padding-top: 30px;
-        float: none;
-        display: block;
-        align-items: center;
-    }
-       
-@media screen and (max-width: 760px) {
-    .container {
-       border-width: fit-content; 
-    }
-@media screen and (max-width: 768px) {
-     article {
-         flex-wrap: nowrap;
-         display: block;
-         width: 100%;
-         margin: auto;
-         
-      }
 
-@media screen and (max-width: 768px) {
-    aside{
-        float: none;
-        display: block;
-        width: 100%;
-        margin: auto;
-      }
-@media screen and (max-width: 390px) {
-    header nav {
-        border-width: 100%;
-        margin: auto;
-        float: none;
-        display: block;
-        align-items: center;
-    }
-@media screen and (max-width: 390px) {
-    article {
-        flex-wrap: nowrap;
-        display: block;
-        width: 100%;
-        margin: auto;
-        font-size: ; 
-    }
-@media screen and (max-width: 390px) {
-    aside{
-        float: none;
-        display: block;
-        width: 100%;
-        margin: auto;
-    }
-            
-             
-   
+    @media screen and (max-width: 768px) {
 
+        .logo,
+        .cta {
+            margin: auto;
+            padding-top: 30px;
+            float: none;
+            display: block;
+            align-items: center;
+        }
 
-
-
-
-   
     
-  
+            @media screen and (max-width: 768px) {
+                .container #projects {
+                    
+                    display: block;
+                    float: none;
+                    width: 100%;
+                    margin: auto;
+                    
+                    width: 100%;
 
+                }
+                article section {
+                    float: none;
+                    text-align: center;
+                    width: 100%;
+                }
+              
 
- 
-    
+                @media screen and (max-width: 768px) {
+                    aside {
+                        float: none;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                    }
 
-
-   
-   
-
-
-
-
-
-
+                   
+                            
